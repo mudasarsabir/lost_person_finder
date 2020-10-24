@@ -21,24 +21,32 @@
       <div class="navbar-fixed">
           <nav>
               <div class="nav-wrapper white hoverable">
-                <a href="index.html" class="brand-logo center"><img src="img/logo.png" style="width: 9%; height: 9%; margin-top: 1%;" alt="Logo Image"></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-                <ul class="right">
+                <a href="index.html" class="brand-logo center"><img src="img/logo.png" style="width: 25%; height: 25%; margin-top: 1%;" alt="Logo Image"></a>
+                <ul class="">
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="HOME"><a href="index.html"><i class="material-icons black-text">home</i></a></li>
-                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Log In"><a href="#modal1" class=" modal-trigger"><i class="material-icons black-text">login</i></a></li>
-                     <!-- Modal Structure -->
-  
+                    <li class="waves-effect tooltipped hoverable right" data-position="bottom" data-tooltip="Log In"><a href="#modal1" class=" modal-trigger"><i class="material-icons black-text">login</i></a></li>
                 </ul>
               </div>
           </nav>
       </div>
       <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
+        <div class="">
+          <h5 class="center">Only <i class="red-text"> *Admin </i> can Log In</h5><hr>
         </div>
-        <div class="modal-footer">
-          <button class="btn right white hoverable waves-effect waves-grey-lighten-5 black-text" type="submit"><b>Submit</b><i class="material-icons right black-text">send</i></button>
+        <div class="modal-content container">
+          <div class="input-field">
+            <i class="material-icons black-text prefix">email</i>
+            <input id="icon_email" type="email" class="validate" name="email">
+            <label for="icon_email"><i class="red-text">*</i>Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons black-text prefix">vpn_key</i>
+            <input id="icon_prefix" type="password" class="validate" name="name">
+            <label for="icon_prefix"><i class="red-text">*</i>Password</label>
+          </div>
+          <div class="modal-footer">
+            <button class="btn white hoverable waves-effect waves-grey-lighten-5 black-text" type="submit"><b>Submit</b><i class="material-icons right black-text">send</i></button>
+          </div>
         </div>
       </div>
   </header>
